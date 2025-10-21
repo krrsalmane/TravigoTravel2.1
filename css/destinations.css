@@ -1,0 +1,283 @@
+*{
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #ffffff;
+}
+body h1, h2{
+	color: #0c025c;
+}
+
+body p{
+	color: rgb(73, 90, 131);
+	font-weight: 500;
+}
+
+#menu-icon{
+	font-size: 35px;
+		z-index: 10001;
+	cursor: pointer;
+	display: none;
+	display: none;
+}
+
+.navbar{
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+.navbar a{
+	color: rgb(0, 0, 0);
+	font-weight: 500;
+	padding: 0px 22px;
+}
+.navbar .sign_up{
+	padding: 8px;
+	padding-inline: 20px;
+	border: 1px solid rgb(0, 0, 0);
+	margin-right: 20px;
+	border-radius: 5px;
+}
+.logo{
+	color: black;	
+	font-size: xx-large;
+	font-weight: 700;
+}
+header {
+	position: fixed;
+	width: 80%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	transition: ease .40s;
+	z-index: 100;
+	padding: 0 10%;
+}
+	
+header select{
+	background: none;
+	border: none;
+}
+header select{
+	background: none;
+	border: none;
+}
+
+select{
+	background: none;
+}
+
+.head_dest{
+	margin-top: 180px;
+	margin-left: 150px;
+	color: rgb(116, 130, 140);
+}
+.head_dest2{
+	margin: 0;
+	margin-left: 200px;
+	color: rgb(116, 130, 140);
+}
+.p_dest{
+	margin: 0;
+	margin-bottom: 30px;
+	margin-left: 200px;
+	width: 30%;
+}
+
+h1{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: clamp(2.5rem, 10vw, 5rem);
+	margin-left: 10vw;
+	width: 80vh;
+	color: rgb(0, 0, 0);
+}
+
+.svg_2{
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	top:0;
+	min-width: 500px;
+}
+
+.icon1{
+	position: absolute;
+	background-color: rgb(251, 186, 73);
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 125px;
+	border-radius: 12px;
+}
+.icon2{
+	position: absolute;
+	background-color: rgb(255, 102, 0);
+	width: 50px;
+	height: 50px;
+	margin-top: 110px;
+	margin-left: 125px;
+	border-radius: 12px;
+}
+.icon3{
+	position: absolute;
+	background-color: rgb(0, 82, 118);
+	width: 50px;
+	height: 50px;
+	margin-top: 220px;
+	margin-left: 125px;
+	border-radius: 12px;
+}
+
+.outro{
+	margin-top: 10%;
+	justify-items: center;
+}
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 150px;
+	padding-left: 50px;
+	color: rgb(132, 217, 241);
+	align-items: baseline;
+}
+footer div{
+	width: 200px;
+}
+footer .div_1{
+	margin-right: 250px;
+}
+footer h1{
+	margin: 0;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+}
+footer h2 {
+	margin: 0;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+}
+
+footer a{
+	color: rgb(113, 115, 116);
+	display: block;
+	margin-top: 10px;
+	font-weight: 500;
+}
+footer p{
+	width: 300px;
+	color: rgb(113, 115, 116);
+	font-weight: 500;
+}
+
+.social_icons{
+	display: flex;
+	justify-content: center;
+}
+.social_icons a{
+	margin: 10px;
+	padding: 0;
+}
+.rights{
+	color: rgb(120, 121, 122);
+	margin-top: 70px;
+	margin-bottom: 150px;
+	justify-self: center;
+}
+
+.div_img1{
+	position: absolute;
+	right: 20%;
+	top: 40%;
+	width: 270px;
+	height: 425px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px rgb(0, 0, 0, .25);
+}
+.div_img2{
+	z-index: 1;
+	position: absolute;
+	right: 15%;
+	top: 050%;
+	width: 270px;
+	height: 425px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px rgb(0, 0, 0, .25);
+}
+.div_img3{
+	width: 270px;
+	height: 425px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px rgb(0, 0, 0, .25);
+	scale: .8;
+}
+.div_imgs{
+	width: 270px;
+	height: 425px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px rgb(0, 0, 0, .25);
+	scale: .8;
+}
+
+.img{
+	top: 0;
+	left: 0;
+}
+.desc_img{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background-color: white;
+}
+.desc_img h3{
+	margin: 0;
+	margin-left: 15px;
+	margin-right: 35%;
+}
+.desc_img p{
+	margin-left: 30px;
+}
+
+.price{
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+#h2_2{
+	text-align:center;
+	margin-top: 100px;
+}
+
+.destinations{
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	flex-wrap: wrap;
+	margin-left: 15%;
+}
+
+#r_l_buttons{
+	margin-left: 44%;
+}
+
+.svg_3{
+	filter: drop-shadow(.5px .5px 8px rgba(63, 63, 63, 0.3));
+	border-radius: 100%;
+	margin-top: 10px;
+	margin-inline: 20px;
+}

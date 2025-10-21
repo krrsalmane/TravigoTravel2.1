@@ -1,0 +1,205 @@
+/* common css */
+
+*{
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #ffffff;
+}
+body h1, h2{
+	color: #0c025c;
+}
+
+body p{
+	color: rgb(73, 90, 131);
+	font-weight: 500;
+}
+
+#menu-icon{
+	font-size: 35px;
+		z-index: 10001;
+	cursor: pointer;
+	display: none;
+	display: none;
+}
+
+.navbar{
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+.navbar a{
+	color: rgb(0, 0, 0);
+	font-weight: 500;
+	padding: 0px 22px;
+}
+.navbar .sign_up{
+	padding: 8px;
+	padding-inline: 20px;
+	border: 1px solid rgb(0, 0, 0);
+	margin-right: 20px;
+	border-radius: 5px;
+}
+.logo{
+	color: black;	
+	font-size: xx-large;
+	font-weight: 700;
+}
+header {
+	position: fixed;
+	width: 80%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	transition: ease .40s;
+	z-index: 100;
+	padding: 0 10%;
+}
+	
+header select{
+	background: none;
+	border: none;
+}
+header select{
+	background: none;
+	border: none;
+}
+
+select{
+	background: none;
+}
+
+h1{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: clamp(2.5rem, 10vw, 5rem);
+	margin-left: 10vw;
+	width: 80vh;
+	color: rgb(0, 0, 0);
+}
+
+.svg_2{
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	top:0;
+	min-width: 500px;
+}
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 150px;
+	padding-left: 50px;
+	color: rgb(132, 217, 241);
+	align-items: baseline;
+}
+footer div{
+	width: 200px;
+}
+footer .div_1{
+	margin-right: 250px;
+}
+footer h1{
+	margin: 0;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+}
+footer h2 {
+	margin: 0;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+}
+
+footer a{
+	color: rgb(113, 115, 116);
+	display: block;
+	margin-top: 10px;
+	font-weight: 500;
+}
+footer p{
+	width: 300px;
+	color: rgb(113, 115, 116);
+	font-weight: 500;
+}
+
+.social_icons{
+	display: flex;
+	justify-content: center;
+}
+.social_icons a{
+	margin: 10px;
+	padding: 0;
+}
+.rights{
+	color: rgb(120, 121, 122);
+	margin-top: 70px;
+	margin-bottom: 150px;
+	justify-self: center;
+}
+
+/* unique css */
+
+#contact_heading{
+	margin-top: 180px;
+}
+
+form{
+	width: 20vw;
+	flex-wrap: wrap;
+	display: flex;
+	margin-left: 50%;
+	translate: -50%;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+	padding-inline:0vw;
+}
+form input,
+form textarea{
+	display: inline-block;
+	width: 100%;
+	padding: 3%;
+	padding-left: 3%;
+	border: none;
+	box-shadow: .01em .01em .5em rgb(0, 0, 0, .25);
+	border-radius: 7px;
+	font-weight: 420;
+	transition: transform 0.5s ease;
+}
+form textarea{
+	resize: none;
+	height: 10em;
+}
+form .contact_send{
+	position: absolute;
+	right: -30%;
+	top: 65%;
+}
+form button{
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #FFF7E9;
+	padding: 2vw;
+	padding-inline: 5vw;
+	font-weight: 500;
+	box-shadow: .01em .01em 1em rgb(0, 0, 0, .25);
+}
+form .additional{
+	color: black;
+	font-family:'Times New Roman', Times, serif;
+}
+form input:focus, textarea:focus{
+	transition: transform 0.5s ease;
+	transform: scale(105%);
+}

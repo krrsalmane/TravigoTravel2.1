@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --second-color: black;
+    --color-Contact: #CB6C58;
+    --color-Cercle: #D5AEE4;
+    --color-text: #181E4B;
+    --color-text-petit: #5E6282;
+    --bg-color: white;
+    --color-back: #fff1da;
+}
+
+body{
+    background-image: url(../img/Ellipse\ 10.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-y: -20%;
+    background-position-x: -20%;
+}
+/* -------------------------Header------------------------- */
+header{
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-decoration: none;
+    margin: 2%;
+}
+
+nav div ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav div ul .sign{
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+    padding: 0 1% 0 1%;
+}
+
+header div ul li a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+header div ul li select{
+    border: none; 
+    outline: none;
+}
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--second-color);
+    padding: 0.5rem;
+}
+
+/* -------------------------Main------------------------- */
+main section h2{
+    color: var(--color-Contact);
+}
+main section p{
+    color: var(--color-text-petit);
+    line-height: 38px;
+}
+section div{
+    width: 50%;
+    padding: 2%;
+    align-items: center;
+}
+.txt_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin-bottom: 6%; */
+}
+.txt_img img{
+    width: 40%;
+    height: 80%;
+    margin-left: 20%;
+}
+.txt_img div:first-child{
+    padding-left: 10%;
+}
+
+.txt_img div:last-child{
+    background-image: url(../img/Ellipse\ 10.png);
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-position-y: bottom;
+    background-size: 50%;
+}
+
+.img-txt{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-txt div:last-child{
+    padding-left: 10%;
+}
+
+.img-txt img{
+    width: 40%;
+    height: 80%;
+    margin-left: 15%;
+}
+
+.img-txt div:first-child{
+    background-image: url(../img/Ellipse\ 10.png);
+    background-repeat: no-repeat;
+    background-position: 60%;
+    background-position-y: bottom;
+    background-size: 50%;
+}
+
+/* -------------------------Section------------------------- */
+.list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+    flex-wrap: wrap;
+}
+
+.list div{
+    justify-self: center;
+}
+
+.list div:first-child{
+    width: 40%;
+}
+.list h4{
+    color: var(--color-text-petit);
+}
+.list h1{
+    color: var(--color-Contact);
+}
+.list-user{
+    position: relative;
+    background-color: var(--bg-color);
+    box-shadow: 5px 5px 50px grey;
+    border-radius: 7px;
+}
+
+.list-user div{
+    width: 90%;
+}
+
+.list-user h2{
+    color: #5E6282;
+}
+
+.list-user p{
+    color: var(--color-text-petit);
+}
+
+.change-btn {
+      position: absolute;
+      /* top: 30%; */
+      font-weight: 900;
+      color: var(--bg-color);
+      padding: 3%;
+      background-color: var(--color-Contact);
+      border-radius: 0 0 16px 16px;
+      border: 1px solid var(--color-Contact);
+      cursor: pointer;
+      margin-left: 80%;
+}
+.list-txt1{
+      display: block;
+    }
+
+.list-txt2{
+      display: none;
+}
+
+input[type="checkbox"]:checked ~ .list-txt1 {
+      display: none;
+}
+
+input[type="checkbox"]:checked ~ .list-txt2 {
+      display: block;
+}
+
+/* -------------------------Footer------------------------- */
+footer{
+    display: block;
+    text-align: left;
+    line-height: 38px;
+    background-image: url(../img/Ellipse\ 10.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right;
+    background-position-x: 107%;
+    background-position-y: -20%;
+}
+
+footer p{
+    color: var(--color-text-petit);
+    line-height: 20px;
+    font-size: small;
+    font-weight: 900;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content h2{
+    color: #4b58be;
+    font-weight: 800;
+}
+
+.content h4{
+    font-weight: 900;
+}
+.content div ul{
+    list-style-type: none;
+}
+
+.content div ul li a{
+    color: var(--color-text-petit);
+    text-decoration: none;
+}
+
+.social-media{
+    display: block;
+    color: var(--color-text-petit);
+    text-align: center;
+}
+.social ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social ul li{
+    margin-top: 3%;
+    margin-right: 2%;
+}
+
+#copyright{
+    text-align: center;
+}
+
+/* -------------------------Media------------------------- */
+@media (max-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav div ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        /*top: 100%;*/
+        right: 2%;
+        background-color: var(--bg-color);
+        padding: 1rem;
+        width: 60%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-icon + nav div ul {
+        display: flex;
+    }
+    nav div ul .sign{
+    width: 30%;
+}
+footer{
+    background-image: none;
+}
+}
+
+@media(max-width: 575px){
+    footer{
+        text-align: center;
+        background-image: none;
+    }
+    .content{
+        display: block;
+    }
+    main .txt_img, .img-txt{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main .txt_img img{
+        /* display: none; */
+        width: 100%;
+    } 
+    main .img-txt img{
+        display: none;
+    } 
+
+    main .txt_img div:first-child{
+        width: 100%;
+    }
+    main .img-txt div:last-child{
+        width: 100%;
+    }
+
+    .txt_img div:last-child{
+    background-image: none;
+}
+.img-txt div:first-child{
+    background-image: none;
+}
+.list{
+    display: block;
+    text-align: center;
+}
+.list div:first-child{
+    /* text-align: left; */
+    width: 100%;
+}
+}
