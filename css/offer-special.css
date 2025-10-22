@@ -1,0 +1,50 @@
+.head {
+    display: flex;
+    margin-top: 6%;
+    justify-content: center;
+
+}
+
+
+.tiltle {
+
+    font-size: 230%;
+    color: coral;
+    gap: 12px;
+    text-align: center;
+}
+
+.first-section {
+
+    display: flex; 
+    justify-content: space-around;
+
+}
+
+
+
+
+#imgafrica {
+
+    border-radius: 7%;
+
+}
+
+#prompt {
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    height: 138px;
+    width: 300px;
+    padding-left: 30px;
+    padding-top: 20px;
+    border-radius: 15%;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paragraphafrica {
+
+
+    display: grid;
+    gap: 20px;
+}
