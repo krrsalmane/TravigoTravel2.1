@@ -10,12 +10,13 @@
 body {
 	background-color: #ffffff;
 }
-body h1, #faq_sec h2{
+h1{
 	color: #0c025c;
-	font-size: clamp(2.5rem, 10vw, 5rem);
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 180px;
+	font-size: calc(2vw + 50px );
 	margin-left: 10vw;
-	width: 80vh;
+    margin-bottom: 200px;
 }
 
 #menu-icon{
@@ -74,14 +75,6 @@ header select{
 
 select{
 	background: none;
-}
-
-h1{
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: clamp(2.5rem, 10vw, 5rem);
-	margin-left: 10vw;
-	width: 80vh;
-	color: rgb(0, 0, 0);
 }
 
 .svg_2{
@@ -147,3 +140,15 @@ footer p{
 }
 
 /* unique css */
+
+main h2{
+    font-size: 65px;
+}
+
+.Japan .cont{
+	display: flex;
+}
+
+main img{
+	height: ;
+}
