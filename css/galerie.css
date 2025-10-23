@@ -18,6 +18,7 @@ h1{
 	font-size: calc(2vw + 50px );
 	margin-left: 10vw;
     margin-bottom: 200px;
+	padding-right: 1vw;
 }
 
 #menu-icon{
@@ -145,6 +146,7 @@ footer p{
 main h2{
     font-size: 65px;
 	margin-bottom: 100px;
+	margin-left: 200px;
 }
 
 main section{
@@ -156,13 +158,14 @@ main section{
 	flex-wrap: wrap;
 	overflow-x: auto;
 	justify-content: center;
-	width: 800px;
+	width: 830px;
 	height: 1200px;
 	gap: 2vw;
-	transform: rotate(-90deg) translateY(350px) translateX(250px);
+	transform: rotate(-90deg) translateY(320px) translateX(250px);
 }
 
 .image{	
+	transition: 1s;
 	height: 400px;
 	width: 733px;
 	gap: 2vw;
@@ -171,28 +174,29 @@ main section{
 	border-radius: 100px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.753);
 	transform-origin: top left;	
-	img{
-		width: 200%;
-		border-radius: 100px;
-		transform: rotate(90deg) translateY(400px);
-	}
-	
+	position: relative;
 }
+main img{
+	width: 200%;
+	border-radius: 100px;
+	transform: rotate(90deg) translateY(400px);
+}
+
+.image:hover{
+	z-index: 5;
+	transition: .85s;
+	transform: scale(1.1) translateY(-500px);
+	transform-origin: center;
+	height: 1000px;
+	width: 733px;
+	margin-top: 600px;
+	margin-bottom: -500px; 
+}
+
 
 /* Customize the scrollbar width */
 ::-webkit-scrollbar {
  width: 12px;
+ display: none;
 }
-/* Style the track (background) */
-::-webkit-scrollbar-track {
- background: #faf7e9;
-}
-/* Style the thumb (draggable handle) */
-::-webkit-scrollbar-thumb {
- background:rgba(255, 228, 196, 0.781);
- border-radius: 6px;
-}
-/* Change thumb color on hover */
-::-webkit-scrollbar-thumb:hover {
- background: #555;
-}
+
