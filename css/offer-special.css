@@ -37,7 +37,8 @@
 
 #prompt {
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: #FFF1E5(0, 0, 0, 0.1) 0px 10px 50px;
+    background-color: #FFF1E5;
     height: 138px;
     width: 300px;
     padding-left: 30px;
@@ -58,6 +59,7 @@
     display: grid;
     gap: 10px;
     justify-content: flex-end;
+    position: relative;
 }
 
 section2{
@@ -76,4 +78,21 @@ section2{
 justify-content: center;
 justify-content: space-around;
 
+}
+
+section2 div button{
+
+    border: none;
+    border-radius: 26px;
+    color: aliceblue;
+    height: 40px;
+    width: 80px;
+    position: absolute;
+}
+
+.two-images button:first-child{
+ bottom: 10%;
+}
+.two-images button:last-child{
+ bottom: 38%;
 }
