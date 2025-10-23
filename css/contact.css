@@ -203,3 +203,73 @@ form input:focus, textarea:focus{
 	transition: transform 0.5s ease;
 	transform: scale(105%);
 }
+<<<<<<< HEAD
+=======
+
+#container details{
+	margin-left: 50%;
+	translate: -50%;
+	color: black;
+	position: relative;
+	background-color: rgba(255, 228, 196, 0.737);
+	width: 40vw;
+	padding-left: 3%;
+	box-shadow: .01em .01em .5em rgb(0, 0, 0, .25);
+	border-radius: 50px;
+	transition: transform 0.5s ease;
+	margin-top: 50px;
+	text-align: center;
+	padding: 15px;
+	overflow: hidden;
+}
+
+summary{
+	cursor: pointer;
+}
+
+details::details-content{
+	font-size: 20px;
+	block-size: 0;
+	transition:  .6s;
+
+}
+details[open]::details-content{
+	block-size: 130px; 
+}
+#container details svg{
+	scale: .4;
+	position: absolute;
+	right: 20px;
+}
+
+
+
+
+
+@media (max-width: 1040px){
+	h1{
+		width: 90vw;
+	}
+	
+	form{
+		width: 70vw;
+		flex-wrap: wrap;
+		display: flex;
+		margin-left: 50%;
+		translate: -50%;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5em;
+		padding-inline:0vw;
+	}
+	#container details{
+		width: 70vw;
+		margin-left: 50%;
+		translate: -50%;
+	}
+	details[open]::details-content{
+	block-size: 220px; 
+	}
+
+}
+>>>>>>> 9e936bcb542be080a5a95706275dd0f289d0c1ec
