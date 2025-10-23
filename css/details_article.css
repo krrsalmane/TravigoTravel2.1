@@ -31,13 +31,17 @@ h1{
 
 .navbar{
 	display: flex;
-	align-items: baseline;
-	flex-wrap: wrap;
+	width: 40%;
+	justify-content: flex-start;
+	margin-top: 20px;
 }
 .navbar a{
 	color: rgb(0, 0, 0);
 	font-weight: 500;
 	padding: 0px 22px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.187);
 }
 .navbar .sign_up{
 	padding: 8px;
@@ -90,7 +94,7 @@ select{
 footer{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 150px;
+	margin-top: 250px;
 	padding-left: 50px;
 	color: rgb(132, 217, 241);
 	align-items: baseline;
@@ -148,6 +152,18 @@ footer p{
 	top: 2px;
 }
 
-::scrollbar {
- display: none;
+main{
+	display: flex;
+	width: clamp(20rem, 55vw,50rem);
+	margin-top: 200px;
+	margin-left: calc(28vw - 5.2rem);
+	height: 70%;
+	margin-bottom: 300px;
+	justify-content: flex-start;
+} 
+
+.sec1 img{
+	width: 100%;
 }
+
+
