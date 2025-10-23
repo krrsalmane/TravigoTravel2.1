@@ -80,26 +80,67 @@ h1{
     width: 100%;
 }
 
-.Description {
+#Description--1, #Description--3, #Description--5{
+    width: 46%;
+    margin-top: 20px;
+    margin-left: 47px;
+    text-align: center;
+    border: 15px solid rgba(255, 225, 154, 0.793);
+    height: 336px;
+    padding: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 62px;
+}
+#Description--2, #Description--4, #Description--6{
     width: 46%;
     margin-top: 20px;
     margin-left: 30px;
     text-align: center;
-    /* border: 10px solid black; */
+    border: 15px solid rgba(255, 225, 154, 0.793);
     height: 336px;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 30px;
+    border-top-left-radius: 62px;
 }
-.countiner div{
+
+#Description--1{
+    order: 2;
+}
+#Description--2{
+    order: 3;
+}
+#Description--3{
+    order: 6;
+}
+#Description--4{
+    order: 7;
+}
+#Description--5{
+    order: 10;
+}
+#Description--6{
+    order: 11;
+}
+
+ #img--1{
     order: 1;
 }
-/* #Description--1{
-    order: 2;
-} */
+ #img--2{
+    order: 4;
+}  
 
-#img--1{
-    order: 0;
+ #img--3{
+    order: 5;
 }
+ #img--4{
+    order: 8;
+} 
+ #img--5{
+    order: 9;
+}
+ #img--6{
+    order: 12;
+}    
 
 .Image{
     width: 46%;
@@ -108,6 +149,16 @@ h1{
     margin-top: 20px;
     
 }
+img:hover{
+    transition: .3s;
+    transform: scale(1.05);
+}
+.Description:hover{
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+
 img {
     width: 100%;
     height: 60%;
@@ -115,6 +166,7 @@ img {
     border-radius: 15px;
 } 
 h2{
+    text-align: start;
     margin-bottom: 42px;
     font-size: xx-large;
     font-weight: bolder;
@@ -123,7 +175,7 @@ h2{
 .first-paraghraph{
     margin-bottom: 20px;
     font-size: x-large;
-    color: rgb(255, 68, 0);
+    color: #CB6C58;
     font-weight: bold;
 }
 p{
@@ -132,6 +184,28 @@ p{
     font-weight:bold;
 }
 
+button{
+    margin-top: 42px;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 12px;
+    border-color: #CB6C58;
+}
+
+button:hover{
+    background-color: #CB6C58;
+    transform: scale(1.1);
+
+}
+
+a{
+    text-decoration: none;
+    color: black;   
+}
+a:hover{
+    color: white;
+}
 
 /*---------------footer---------*/
 footer{
