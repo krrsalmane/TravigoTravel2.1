@@ -90,6 +90,16 @@ h1{
     padding: 20px;
     border-radius: 12px;
 }
+.countiner div{
+    order: 1;
+}
+/* #Description--1{
+    order: 2;
+} */
+
+#img--1{
+    order: 0;
+}
 
 .Image{
     width: 46%;
