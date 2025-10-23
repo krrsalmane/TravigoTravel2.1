@@ -57,9 +57,23 @@
 .two-images{
     display: grid;
     gap: 10px;
+    justify-content: flex-end;
 }
 
 section2{
 
     display: flex;
+}
+
+.text-second_section{
+  
+ margin-bottom: 20%;
+  align-content: center;
+
+}
+
+section2{
+justify-content: center;
+justify-content: space-around;
+
 }
