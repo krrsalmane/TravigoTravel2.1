@@ -1,86 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    transition: all .2s ease-in-out;
+    user-select: none;
+}
+
 .head {
+    background-color: black;
     display: flex;
     margin-top: 6%;
+    width: 100%;
     justify-content: center;
-
+    align-items: center;
+    box-sizing: border-box;
 }
 
 
-.tiltle {
-
-    font-size: 230%;
+.title {
+    font-size: 200%;
     color: coral;
     gap: 12px;
-    text-align: center;
+    align-self: center;
 }
 
 .first-section {
 
-    display: flex; 
+    display: flex;
     justify-content: space-around;
-
 }
 
-.ticket-Offer{
+.first-section img {
+    margin-left: 20em;
+}
+
+.ticket-Offer {
 
     display: flex;
 }
 
 
-
-
 #imgafrica {
-
     border-radius: 7%;
-
 }
 
 #prompt {
-
     box-shadow: #FFF1E5(0, 0, 0, 0.1) 0px 10px 50px;
     background-color: #FFF1E5;
     height: 138px;
-    width: 300px;
-    padding-left: 30px;
-    padding-top: 20px;
-    border-radius: 15%;
+    border-radius: 30px;
+    padding: auto;
+    width: 70%;
+    display: block;
+    text-align: center;
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .paragraphafrica {
-
-
-    display: grid;
+    background-color: blue;
+    display: block;
     gap: 20px;
 }
 
-.two-images{
-    display: grid;
+.two-images {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    justify-content: flex-end;
     position: relative;
+    background-color: black;
 }
 
-section2{
+.two-images #orange-btn{
+    top: 0;
+    left: 0;
+}
+
+
+.two-images #blue-btn{
+    left: 0;
+    right: 0;
+}
+.text-second_section {
 
     display: flex;
-}
-
-.text-second_section{
-  
- margin-bottom: 20%;
-  align-content: center;
-
-}
-
-section2{
-justify-content: center;
-justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 2rem;
 
 }
 
-section2 div button{
+.first-parent-section-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+main {
+
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    
+}
+
+section div button {
 
     border: none;
     border-radius: 26px;
@@ -90,9 +126,17 @@ section2 div button{
     position: absolute;
 }
 
-.two-images button:first-child{
- bottom: 10%;
+
+
+/*second section*/
+
+.first-div{
+    display: flex;
+    flex-wrap: wrap;
 }
-.two-images button:last-child{
- bottom: 38%;
+
+
+.second-div{
+    display: flex;
+    flex-wrap: wrap;
 }
