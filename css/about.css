@@ -193,6 +193,59 @@ input[type="checkbox"]:checked ~ .list-txt2 {
       display: block;
 }
 
+/* -------------------------Section2------------------------- */
+#sec-section{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#sec-section h1{
+    color: var(--color-text);
+}
+#sec-section img{
+    border-radius: 50%;
+    width: 50%;
+    height: 30%;
+}
+#Cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: space-evenly;
+}
+
+.card-item{
+    width: 20%;
+    padding: 1%; 
+} 
+.card-item p{
+    color: var(--color-text-petit);
+}
+.card-item h3{
+    color: var(--color-text);
+}
+
+#btn-scroll{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#btn-scroll button{
+    width: 10%;
+    border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+/* #Cards > div{
+    display: block;
+    width: 20%;
+    border-radius: 5px;
+    box-shadow: 10px 0 20px 0 gray;
+    padding: 1%;
+} */
 /* -------------------------Footer------------------------- */
 footer{
     display: block;
@@ -286,6 +339,15 @@ footer p{
 }
 footer{
     background-image: none;
+}
+#Cards{
+    /* width: calc(100%/1,-1%); */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.card-item{
+    width: 60%;
 }
 }
 

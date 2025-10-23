@@ -19,7 +19,7 @@ body{
     background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-size: 30%;
-    background-position-y: -12%;
+    background-position-y: -20%;
     background-position-x: -20%;
 }
 /* -------------------------Header------------------------- */
@@ -67,165 +67,78 @@ header div ul li select{
 
 /* -------------------------Main------------------------- */
 main{
-    display: block;
-    text-align: center;
-    margin: 5%;
-	justify-content: center;
-}
-
-main p{
-    color: var(--color-text-petit);
-}
-
-main h4{
-    color: var(--color-text-petit);
-}
-
-main h1{
-    color: var(--color-text);
-    margin-bottom: 25px;
-}
-.cards{
     display: flex;
-	gap: 2%;
-	width: 80%;
-	justify-self: center;
-	font-family: 'Poppins', sans-serif;
+    gap: 0 9%;
+    justify-content: center;
+    margin-bottom: 5%;
 }
-
-.card{
-    background-color: var(--bg-color);
+.description{
+    display: block;
+    text-align: left;
+    width: 40%;
+    font-size: clamp(0.5rem, 3vh, 1rem);
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+    font-weight: 900;
+}
+.description p{
+    color: var(--color-text-petit);
+}
+.description h1{
+    color: var(--color-Contact);
+}
+main img{
+    width: 25%;
     border-radius: 10px;
 }
 
-.txt{
-	display: flex;
-}
-.txt p{
-	margin-top: 10%;
-	margin-bottom: 10%;
-}
-.txt div:first-child{
-	margin-right: auto;
-}
-
-.img-txts{
-    display: flex;
-	gap: 2%;
-}
-.img-card{
-    width: 100%;
-    border-radius: 7px;
-	object-fit: cover;
-}
 /* -------------------------Section------------------------- */
 section{
-    display: block;
-    margin-bottom: 4%;
-}
-
-section h1{
-    text-align: center;
-    color: var(--color-text);
-    margin-bottom: 50px;
-}
-section div{
+    display: flex;
+    gap: 0 20px;
     justify-content: center;
+    margin-bottom: 5%;
 }
-
-.city{
+.imgs{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    margin-left: 10%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "first second"
+    "first third";
+    width: 50%;
+}
+.first{
+    grid-area: first;
+    object-fit: cover;
+    height: 100%;
+}
+.second{
+    grid-area: second;
+    object-fit: cover;
+    height: 100%;
+}
+.third{
+    grid-area: third;
+    object-fit: cover;
+    height: 100%;
 }
 
-.city h2{
-    font-weight: 800;
-    font-size: 90%;
+section img{
+    width: 100%;
+    border-radius: 10px;
 }
-
-.city h2 a{
-	color: black;
-	text-decoration: none;
-}
-
-.city p{
+section div:last-child{
+    width: 25%;
+    font-size: clamp(0.5rem, 3vh, 1rem);
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+    font-weight: 900;
     color: var(--color-text-petit);
 }
-
-.city img{
-    width: 60%;
-    height: 170px;
-    border-radius: 7px;
+section div:last-child h1{
+    color: var(--color-Contact);
 }
-
-/* -------------------------Section 2------------------------- */
-.second-section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 60px;
-    padding: 60px 10%;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.second-section h1{
-    text-align: left;
-}
-
-.second-section .text , .pic-title h4{
-    flex: 1;
-    min-width: 320px;
-    text-align: left;
-}
-.second-section-texts{
-    display: flex;
-    column-gap: 15px;
-    margin-bottom: 2%;
-    justify-content: left;
-}
-
-.second-section-texts p {
-    flex: 1;
-    min-width: 320px;
-}
-.second-section-texts p , h4{
-    color: #5a7184;
-}
-.section-cards {
-    display: grid;
-    grid-template-columns: 150px 150px;
-    gap: 20px;
-    /* position: relative; */
-}
-
-.section-cards .card-s {
-    border-radius: 25px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.card-s{
-    width: 220px;
-    height: 290px;
-    text-align: center;
-    color: var(--color-text-petit);
-}
-
-.card-s img{
-    width: 220px;
-    height: 290px;
-}
-
-.section-cards #second-card {
-    position: relative;
-    top: 20%;
-    left: -70%;
-}
-.card-s div:last-child{
-	text-align: left;
-}
-
 /* -------------------------Footer------------------------- */
 footer{
     display: block;
@@ -286,20 +199,23 @@ footer p{
     text-align: center;
 }
 
-/* -------------------------Medai------------------------- */
+/* -------------------------Media------------------------- */
 @media (max-width: 768px) {
     header {
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: center;
     }
+
     .menu-icon {
         display: block;
     }
+
     nav div ul {
         display: none;
         flex-direction: column;
         position: absolute;
+        /*top: 100%;*/
         right: 2%;
         background-color: var(--bg-color);
         padding: 1rem;
@@ -307,7 +223,6 @@ footer p{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
-
     .menu-toggle-checkbox:checked + .menu-icon + nav div ul {
         display: flex;
     }
@@ -317,19 +232,59 @@ footer p{
 footer{
     background-image: none;
 }
+#Cards{
+    /* width: calc(100%/1,-1%); */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.card-item{
+    width: 60%;
+}
+main{
+    display: block;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.description{
+    width: 90%;
+    line-height: 30px;
+    font-size: 0.9rem;
+}
+.description h1{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+main img{
+    display: none;
+}
+section{
+    display: block;
+    justify-items: center;
+    margin-bottom: 5%;
+}
+.imgs{
+    object-fit: cover;
+    width: 90%;
+    margin-bottom: 5%;
+}
+section div:last-child{
+    width: 80%;
+    line-height: 30px;
+    font-size: 0.9rem;
+}
+section div:last-child h1{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
 }
 
 @media(max-width: 575px){
-    .cards{
-        flex-wrap: wrap;
-    }
-    .city{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .section-cards{
-        display: none;
-    }
     footer{
         text-align: center;
         background-image: none;
@@ -337,8 +292,37 @@ footer{
     .content{
         display: block;
     }
-
-    .second-section-texts{
-        display: block;
+    main .txt_img, .img-txt{
+        display: grid;
+        grid-template-columns: 1fr;
     }
+    main .txt_img img{
+        /* display: none; */
+        width: 100%;
+    } 
+    main .img-txt img{
+        display: none;
+    } 
+
+    main .txt_img div:first-child{
+        width: 100%;
+    }
+    main .img-txt div:last-child{
+        width: 100%;
+    }
+
+    .txt_img div:last-child{
+    background-image: none;
+}
+.img-txt div:first-child{
+    background-image: none;
+}
+.list{
+    display: block;
+    text-align: center;
+}
+.list div:first-child{
+    /* text-align: left; */
+    width: 100%;
+}
 }
