@@ -142,3 +142,12 @@ footer p{
 }
 
 /* unique css */
+
+.navbar	img{
+	position: relative;
+	top: 2px;
+}
+
+::scrollbar {
+ display: none;
+}

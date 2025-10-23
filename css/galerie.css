@@ -18,7 +18,7 @@ h1{
 	font-size: calc(2vw + 50px );
 	margin-left: 10vw;
     margin-bottom: 200px;
-	padding-right: 1vw;
+	padding-right: 2vw;
 }
 
 #menu-icon{
@@ -150,24 +150,26 @@ main h2{
 }
 
 main section{
-	height: 1200px;
+	height: 1000px;
 }
 
 .japan .cont1, .greek .cont2, .morocco .cont3{
+	margin-top: 200px;
 	display: flex;
 	flex-wrap: wrap;
+	overflow-y: visible;
 	overflow-x: auto;
 	justify-content: center;
-	width: 830px;
+	width: 690px;
 	height: 1200px;
 	gap: 2vw;
-	transform: rotate(-90deg) translateY(320px) translateX(250px);
+	transform: rotate(-90deg) translateY(350px) translateX(400px);
 }
 
 .image{	
 	transition: 1s;
 	height: 400px;
-	width: 733px;
+	width: 650px;
 	gap: 2vw;
 	overflow: hidden;
 	flex-shrink: 0;
@@ -185,18 +187,17 @@ main img{
 .image:hover{
 	z-index: 5;
 	transition: .85s;
-	transform: scale(1.1) translateY(-500px);
+	transform: translateY(-500px);
 	transform-origin: center;
 	height: 1000px;
-	width: 733px;
+	width: 670px;
 	margin-top: 600px;
 	margin-bottom: -500px; 
 }
 
 
-/* Customize the scrollbar width */
+
 ::-webkit-scrollbar {
- width: 12px;
  display: none;
 }
 
