@@ -21,6 +21,11 @@
 
 }
 
+.ticket-Offer{
+
+    display: flex;
+}
+
 
 
 
@@ -47,4 +52,14 @@
 
     display: grid;
     gap: 20px;
+}
+
+.two-images{
+    display: grid;
+    gap: 10px;
+}
+
+section2{
+
+    display: flex;
 }
