@@ -9,6 +9,7 @@
 
 body {
 	background-color: #ffffff;
+	overflow-x: hidden;
 }
 h1{
 	color: #0c025c;
@@ -143,13 +144,55 @@ footer p{
 
 main h2{
     font-size: 65px;
+	margin-bottom: 100px;
 }
 
-.Japan .cont{
+main section{
+	height: 1200px;
+}
+
+.japan .cont1, .greek .cont2, .morocco .cont3{
 	display: flex;
+	flex-wrap: wrap;
+	overflow-x: auto;
+	justify-content: center;
+	width: 800px;
+	height: 1200px;
+	gap: 2vw;
+	transform: rotate(-90deg) translateY(350px) translateX(250px);
 }
 
-main div{
-	height: 733px;
-	width: 400px;
+.image{	
+	height: 400px;
+	width: 733px;
+	gap: 2vw;
+	overflow: hidden;
+	flex-shrink: 0;
+	border-radius: 100px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.753);
+	transform-origin: top left;	
+	img{
+		width: 200%;
+		border-radius: 100px;
+		transform: rotate(90deg) translateY(400px);
+	}
+	
+}
+
+/* Customize the scrollbar width */
+::-webkit-scrollbar {
+ width: 12px;
+}
+/* Style the track (background) */
+::-webkit-scrollbar-track {
+ background: #faf7e9;
+}
+/* Style the thumb (draggable handle) */
+::-webkit-scrollbar-thumb {
+ background:rgba(255, 228, 196, 0.781);
+ border-radius: 6px;
+}
+/* Change thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #555;
 }
