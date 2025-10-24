@@ -78,27 +78,6 @@ select {
 .menu-icon {
     display: none;
 }
-
-
-.hero-title {
-    text-align: center;
-    padding: 60px 20px 40px;
-    background-color: white;
-    margin-bottom: 30px;
-}
-
-.hero-title .title-text {
-    font-size: 40px;
-    color: #333;
-    font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.hero-title .title-text span {
-    color: #ff8c42;
-}
 /* -------------------------Main------------------------- */
 main section h2{
     color: var(--color-Contact);
