@@ -23,48 +23,61 @@ body{
     background-position-x: -20%;
 }
 /* -------------------------Header------------------------- */
-header{
-    top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-decoration: none;
-    margin: 2%;
-}
-
-nav div ul{
+header {
     display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-nav div ul .sign{
-    border: 1px solid var(--second-color);
-    border-radius: 5px;
-    padding: 0 1% 0 1%;
+.logo h2 {
+    color: #333;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 26px;
 }
 
-header div ul li a{
-    color: var(--second-color);
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
 }
 
-header div ul li select{
-    border: none; 
-    outline: none;
+nav ul li a:hover {
+    color: #ff8c42;
 }
 
-.menu-toggle-checkbox {
-    display: none;
+.sign a {
+    padding: 8px 15px;
+    border: 1px solid #ff8c42;
+    border-radius: 20px;
+    color: #ff8c42;
 }
 
+select {
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-toggle-checkbox,
 .menu-icon {
     display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--second-color);
-    padding: 0.5rem;
 }
-
 /* -------------------------Main------------------------- */
 main section h2{
     color: var(--color-Contact);
@@ -315,34 +328,60 @@ footer p{
 }
 
 /* -------------------------Media------------------------- */
-@media (max-width: 768px) {
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto;
+@media (max-width: 900px){
+     .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Hide the main nav element by default */
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        height: 100vh;
+        display: none;
+        padding-top: 80px;
+        box-shadow: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
         align-items: center;
     }
-    .menu-icon {
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a,
+    nav ul li select {
+        color: white;
+        font-size: 16px;
         display: block;
+        width: 100%;
+        padding: 15px 0;
     }
 
-    nav div ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 2%;
-        background-color: var(--bg-color);
-        padding: 1rem;
-        width: 60%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+    .sign a {
+        border-color: white;
+        color: white;
     }
 
-    .menu-toggle-checkbox:checked + .menu-icon + nav div ul {
+
+
+    .menu-toggle-checkbox:checked~nav {
         display: flex;
     }
-    nav div ul .sign{
-    width: 30%;
 }
+@media (max-width: 768px) {
 footer{
     background-image: none;
 }
