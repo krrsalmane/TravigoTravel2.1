@@ -5,6 +5,7 @@
 	text-decoration: none;
 	list-style: none;
 	scroll-behavior: smooth;
+    margin: 0;
 }
 
 body {
@@ -18,9 +19,6 @@ main h1, section h2{
 	width: 80vh;
 }
 
-body p{
-	font-weight: 500;
-}
 
 header {
     display: flex;
@@ -150,7 +148,8 @@ footer {
     background-position: right;
     background-position-x: 107%;
     background-position-y: -20%;
-    margin-bottom: 60px;
+    margin-top: 200px;
+    margin-bottom: 10px;
 }
 
 footer p {
