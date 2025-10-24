@@ -23,24 +23,37 @@
         <!-- <rect x="0" y="0" width="35" height="50" fill="none" stroke="black"/> -->
     </svg>
     <!--header--->
+
     <header>
-        <a href="#" class="logo">Travigo</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="sign_up.html" class="sign_up">Sign up</a></li>
-            <li><select>
-                    <option value="english">EN</option>
-                    <option value="arabic">AR</option>
-                    <option value="frensh">FR</option>
-                </select>
-            </li>
-        </ul>
+        <div class="logo">
+            <h2>Travigo</h2>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label> 
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="offer_special.html">Offers</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="sign"><a href="sign_up.html">Sign Up</a></li>
+                <li>
+                    <select name="language">
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="ar">AR</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <h1 id="contact_heading">Contact us</h1>
 
@@ -53,40 +66,151 @@
         </form>
     </main>
 
-    <footer>
-        <div class="div_1">
-            <h1>Travigo</h1>
-            <p>Book your trip in a minute, get full Control for much longer.</p>
-        </div>
-        <div>
-            <h2>Company</h2>
-            <a href="about.html">About</a>
-            <a href="">Team</a>
-            <a href="">Mobile</a>
-        </div>
-        <div>
-            <h2>Contact</h2>
-            <a href="about.html">About</a>
-            <a href="">Team</a>
-            <a href="">Mobile</a>
-        </div>
-        <div>
-            <h2>More</h2>
-            <a href="about.html">About</a>
-            <a href="">Team</a>
-            <a href="">Mobile</a>
-        </div>
-        <div class="social_icons">
-            <a href=""><img src="img/faceb.png" alt="" width="60px"></a>
-            <a href=""><img src="img/insta.png" alt="" width="60px"></a>
-            <a href=""><img src="img/tweet.png" alt="" width="60px"></a>
-        </div>
-    </footer>
+    <section id="faq_sec">
+        <h2>FAQ</h2>
+        <div id="container">
+            <details id="q1">
+                <summary>
+                    How do I change or cancel my booking
+                    <svg width="30" height="30">
+                        <path d="M5,5 L25,5 L15,17 Z" stroke="black" fill="black" stroke-width="10"
+                            stroke-linejoin="round" />
+                    </svg>
+                </summary>
+                <p>
+                    You can book flights, hotels, vacation packages, and guided tours—all in one place.
+                    Whether it's a quick weekend getaway or a long adventure, we've got you covered!
+                </p>
+            </details>
 
-    <p class="rights">All rights reserved@genZdevs.co
-    <p>
+            <details id="q2">
+                <summary>
+                    Can I book flights, hotels, and tours all in one place?
+                    <svg width="30" height="30">
+                        <path d="M5,5 L25,5 L15,17 Z" stroke="black" fill="black" stroke-width="10"
+                            stroke-linejoin="round" />
+                    </svg>
+                </summary>
+                <p>
+                    You can book flights, hotels, vacation packages, and guided tours—all in one place.
+                    Whether it's a quick weekend getaway or a long adventure, we've got you covered!
+                </p>
+            </details>
+
+            <details id="q3">
+                <summary>
+                    Are there any travel insurance options available?
+                    <svg width="30" height="30">
+                        <path d="M5,5 L25,5 L15,17 Z" stroke="black" fill="black" stroke-width="10"
+                            stroke-linejoin="round" />
+                    </svg>
+                </summary>
+                <p>
+                    You can book flights, hotels, vacation packages, and guided tours—all in one place.
+                    Whether it's a quick weekend getaway or a long adventure, we've got you covered!
+                </p>
+            </details>
+
+            <details id="q4">
+                <summary>
+                    Is there a way to get discounts?
+                    <svg width="30" height="30">
+                        <path d="M5,5 L25,5 L15,17 Z" stroke="black" fill="black" stroke-width="10"
+                            stroke-linejoin="round" />
+                    </svg>
+                </summary>
+                <p>
+                    You can book flights, hotels, vacation packages, and guided tours—all in one place.
+                    Whether it's a quick weekend getaway or a long adventure, we've got you covered!
+                </p>
+            </details>
+
+            <details id="q5">
+                <summary>
+                    How do I change or cancel my booking?
+                    <svg width="30" height="30">
+                        <path d="M5,5 L25,5 L15,17 Z" stroke="black" fill="black" stroke-width="10"
+                            stroke-linejoin="round" />
+                    </svg>
+                </summary>
+                <p>
+                    You can book flights, hotels, vacation packages, and guided tours—all in one place.
+                    Whether it's a quick weekend getaway or a long adventure, we've got you covered!
+                </p>
+            </details>
+
+    </section>
+
+    <footer>
+        <div class="content">
+            <div>
+                <div>
+                    <h2>Travigo.</h2>
+                </div>
+                <div>
+                    <p>Book your trip in minute, get full <br>Control for much longer.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Company</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Contact</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Help/FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Address</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>More</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Fights</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Booking</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="img/insta.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="img/X.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Discover our app</h4>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="img/Google Play.png" alt="Google play"></a></li>
+                        <li><a href="#"><img src="img/Play Store.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p id="copyright">All rights reserved@genZdevs.co</p>
+        </div>
+     </footer>
+
 </body>
-<!--link to js--->
-<script type="text/javascript" src="js/script.js"></script>
 
 </html>
