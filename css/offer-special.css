@@ -216,18 +216,72 @@ select {
 }
 
 footer {
-    padding: 40px 5%;
-    text-align: center;
-    color: #aaa;
-    border-top: 1px solid #eee;
-    margin-top: 40px;
+    display: block;
+    text-align: left;
+    line-height: 38px;
+    background-image: url(../img/Ellipse\ 10.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right;
+    background-position-x: 107%;
+    background-position-y: -20%;
+    margin-bottom: 60px;
 }
 
+footer p {
+    color: var(--color-text-petit);
+    line-height: 20px;
+    font-size: small;
+    font-weight: 900;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content h2 {
+    color: #4b58be;
+    font-weight: 800;
+}
+
+.content h4 {
+    font-weight: 900;
+}
+
+.content div ul {
+    list-style-type: none;
+}
+
+.content div ul li a {
+    color: var(--color-text-petit);
+    text-decoration: none;
+}
+
+.social-media {
+    display: block;
+    color: var(--color-text-petit);
+    text-align: center;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social ul li {
+    margin-top: 3%;
+    margin-right: 2%;
+}
+
+#copyright {
+    text-align: center;
+}
 
 
 @media (max-width: 900px) {
 
-   
+
 
 
     .menu-icon {
@@ -276,7 +330,7 @@ footer {
         color: white;
     }
 
-    
+
 
     .menu-toggle-checkbox:checked~nav {
         display: flex;
@@ -287,19 +341,33 @@ footer {
     .hero-title .title-text {
         font-size: 30px;
     }
-        .content-section-1 {
-            flex-direction: column;
-            gap: 30px;
-        }
 
-
-        .content-section-2 {
-            grid-template-columns: 1fr;
-            gap: 30px;
-            padding: 40px 5%;
-        }
-
-        .offers-text-block {
-            padding-right: 0;
-        }
+    .content-section-1 {
+        flex-direction: column;
+        gap: 30px;
     }
+
+
+    .content-section-2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 5%;
+    }
+
+    .offers-text-block {
+        padding-right: 0;
+    }
+
+     footer {
+        margin-top: 20px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
