@@ -1,6 +1,8 @@
 /* common css */
 
 *{
+	margin: 0;
+	padding: 0;
 	font-family: 'Poppins', sans-serif;
 	text-decoration: none;
 	list-style: none;
@@ -155,34 +157,32 @@ footer p{
 main{
 	display: flex;
 	width: clamp(20rem, 55vw,50rem);
-	margin-top: 200px;
+	margin-top: 50px;
 	margin-left: calc(28vw - 5.2rem);
-	height: 70%;
-	margin-bottom: 800px;
-	justify-content: flex-start;
+	flex-wrap: wrap;
 } 
 
-#img1{
+#img1, #img2{
+	margin-top: 50px;
 	width: 100%;
 }
 
 .auth_info{
+	margin-top: 8%;
 	display: flex;
-	width: 40%;
-	background-color: #5c1d02;	
+	width: 50vw;
 	align-items: center;
-	
-	img{
-		background-color: #0c025c;
-	}
-	h2{
-		background-color: #0c025c;
-	}
-	p{
-		background-color: #0c025c;
-	}
+	gap: 10px;	
+	margin-bottom: 8%;
 }
 
+.sec1 h2, .sec2 h2{
+	margin-top: 40px;
+}
+
+.sec2{
+	margin-top: 40px;
+}
 
 #author{
 
