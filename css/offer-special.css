@@ -224,3 +224,82 @@ footer {
 }
 
 
+
+@media (max-width: 900px) {
+
+   
+
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Hide the main nav element by default */
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        height: 100vh;
+        display: none;
+        padding-top: 80px;
+        box-shadow: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a,
+    nav ul li select {
+        color: white;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .sign a {
+        border-color: white;
+        color: white;
+    }
+
+    
+
+    .menu-toggle-checkbox:checked~nav {
+        display: flex;
+    }
+
+
+
+    .hero-title .title-text {
+        font-size: 30px;
+    }
+        .content-section-1 {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+
+        .content-section-2 {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 40px 5%;
+        }
+
+        .offers-text-block {
+            padding-right: 0;
+        }
+    }
