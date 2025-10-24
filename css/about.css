@@ -69,9 +69,13 @@ header div ul li select{
 main section h2{
     color: var(--color-Contact);
 }
+main section{
+    margin-bottom: 5%;
+}
 main section p{
     color: var(--color-text-petit);
     line-height: 38px;
+    font-size: 1.5rem;
 }
 section div{
     width: 50%;
@@ -81,24 +85,24 @@ section div{
 .txt_img{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    /* margin-bottom: 6%; */
 }
 .txt_img img{
-    width: 40%;
-    height: 80%;
-    margin-left: 20%;
+    width: 20%;
+    margin-left: 15%;
+    justify-self: flex-end;
 }
 .txt_img div:first-child{
     padding-left: 10%;
 }
 
-.txt_img div:last-child{
+.txt_img{
     background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-position: 70%;
-    background-position-y: bottom;
-    background-size: 50%;
+    background-position-x: 97%;
+    background-position-y: -5%;
+    padding-bottom: 5%;
+    background-size: 30%;
 }
 
 .img-txt{
@@ -107,22 +111,22 @@ section div{
     flex-wrap: wrap;
 }
 
-.img-txt div:last-child{
+.img-txt:last-child{
     padding-left: 10%;
 }
 
 .img-txt img{
-    width: 40%;
-    height: 80%;
-    margin-left: 15%;
+    width: 20%;
 }
 
-.img-txt div:first-child{
+.img-txt{
     background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
-    background-position: 60%;
-    background-position-y: bottom;
-    background-size: 50%;
+    background-position: 70%;
+    background-position-x: 28%;
+    background-position-y: 20%;
+    padding-bottom: 5%;
+    background-size: 30%;
 }
 
 /* -------------------------Section------------------------- */
@@ -145,6 +149,7 @@ section div{
 }
 .list h1{
     color: var(--color-Contact);
+    font-size: 2.5rem;
 }
 .list-user{
     position: relative;
@@ -163,11 +168,11 @@ section div{
 
 .list-user p{
     color: var(--color-text-petit);
+    font-size: 1.5rem;
 }
 
 .change-btn {
       position: absolute;
-      /* top: 30%; */
       font-weight: 900;
       color: var(--bg-color);
       padding: 3%;
@@ -175,7 +180,7 @@ section div{
       border-radius: 0 0 16px 16px;
       border: 1px solid var(--color-Contact);
       cursor: pointer;
-      margin-left: 80%;
+      right: 3%;
 }
 .list-txt1{
       display: block;
@@ -205,7 +210,7 @@ input[type="checkbox"]:checked ~ .list-txt2 {
 }
 #sec-section img{
     border-radius: 50%;
-    width: 50%;
+    width: 60%;
     height: 30%;
 }
 #Cards{
@@ -214,18 +219,21 @@ input[type="checkbox"]:checked ~ .list-txt2 {
     flex-wrap: wrap;
     margin-top: 5%;
     margin-bottom: 5%;
+    gap: 20px;
     justify-content: space-evenly;
 }
 
 .card-item{
     width: 20%;
-    padding: 1%; 
 } 
 .card-item p{
     color: var(--color-text-petit);
+    line-height: 30px;
+    font-size: 1.5rem;
 }
 .card-item h3{
     color: var(--color-text);
+    font-size: 1.5rem;
 }
 
 #btn-scroll{
@@ -313,7 +321,6 @@ footer p{
         grid-template-columns: 1fr auto;
         align-items: center;
     }
-
     .menu-icon {
         display: block;
     }
@@ -322,7 +329,6 @@ footer p{
         display: none;
         flex-direction: column;
         position: absolute;
-        /*top: 100%;*/
         right: 2%;
         background-color: var(--bg-color);
         padding: 1rem;
@@ -341,13 +347,16 @@ footer{
     background-image: none;
 }
 #Cards{
-    /* width: calc(100%/1,-1%); */
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 .card-item{
     width: 60%;
+}
+.card-item p{
+    width: 60%;
+    justify-self: center;
 }
 }
 
@@ -360,36 +369,41 @@ footer{
         display: block;
     }
     main .txt_img, .img-txt{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: block;
+        background-image: none;
+    }
+    .txt_img h2, .img-txt h2{
+        width: 80%;
     }
     main .txt_img img{
-        /* display: none; */
-        width: 100%;
+        width: 70%;
     } 
     main .img-txt img{
         display: none;
     } 
-
     main .txt_img div:first-child{
         width: 100%;
     }
     main .img-txt div:last-child{
         width: 100%;
     }
-
-    .txt_img div:last-child{
-    background-image: none;
-}
-.img-txt div:first-child{
-    background-image: none;
-}
 .list{
     display: block;
     text-align: center;
 }
+.list h1{
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
 .list div:first-child{
-    /* text-align: left; */
-    width: 100%;
+    width: 90%;
+    text-align: left;
+}
+.list-user{
+    width: 90%;
+}
+.list-user p,h2{
+    width: 50%;
+    justify-self: center;
 }
 }

@@ -120,17 +120,14 @@ main h1{
 }
 /* -------------------------Section------------------------- */
 section{
-    display: block;
+    /* display: block; */
     margin-bottom: 4%;
 }
 
 section h1{
     text-align: center;
     color: var(--color-text);
-    margin-bottom: 50px;
-}
-section div{
-    justify-content: center;
+    margin-bottom: 5%;
 }
 
 .city{
@@ -143,6 +140,7 @@ section div{
 .city h2{
     font-weight: 800;
     font-size: 90%;
+	font-family: sans-serif;
 }
 
 .city h2 a{
@@ -152,10 +150,12 @@ section div{
 
 .city p{
     color: var(--color-text-petit);
+	margin-bottom: 2%;
+	font-family: sans-serif;
 }
 
 .city img{
-    width: 60%;
+    width: 80%;
     height: 170px;
     border-radius: 7px;
 }
@@ -324,8 +324,9 @@ footer{
         flex-wrap: wrap;
     }
     .city{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: block;
+		width: 100%;
+		justify-content: center;
     }
     .section-cards{
         display: none;
