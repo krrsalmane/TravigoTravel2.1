@@ -158,12 +158,34 @@ main{
 	margin-top: 200px;
 	margin-left: calc(28vw - 5.2rem);
 	height: 70%;
-	margin-bottom: 300px;
+	margin-bottom: 800px;
 	justify-content: flex-start;
 } 
 
-.sec1 img{
+#img1{
 	width: 100%;
+}
+
+.auth_info{
+	display: flex;
+	width: 40%;
+	background-color: #5c1d02;	
+	align-items: center;
+	
+	img{
+		background-color: #0c025c;
+	}
+	h2{
+		background-color: #0c025c;
+	}
+	p{
+		background-color: #0c025c;
+	}
+}
+
+
+#author{
+
 }
 
 
