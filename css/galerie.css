@@ -9,6 +9,7 @@
 
 body {
 	background-color: #ffffff;
+	overflow-x: hidden;
 }
 h1{
 	color: #0c025c;
@@ -17,64 +18,63 @@ h1{
 	font-size: calc(2vw + 50px );
 	margin-left: 10vw;
     margin-bottom: 200px;
+	padding-right: 2vw;
 }
 
-#menu-icon{
-	font-size: 35px;
-		z-index: 10001;
-	cursor: pointer;
-	display: none;
-	display: none;
-}
-
-.navbar{
-	display: flex;
-	align-items: baseline;
-	flex-wrap: wrap;
-}
-.navbar a{
-	color: rgb(0, 0, 0);
-	font-weight: 500;
-	padding: 0px 22px;
-}
-.navbar .sign_up{
-	padding: 8px;
-	padding-inline: 20px;
-	border: 1px solid rgb(0, 0, 0);
-	margin-right: 20px;
-	border-radius: 5px;
-}
-.logo{
-	color: black;	
-	font-size: xx-large;
-	font-weight: 700;
-}
 header {
-	position: fixed;
-	width: 80%;
-	top: 0;
-	right: 0;
-	z-index: 1000;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background: transparent;
-	transition: ease .40s;
-	z-index: 100;
-	padding: 0 10%;
-}
-	
-header select{
-	background: none;
-	border: none;
-}
-header select{
-	background: none;
-	border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-select{
-	background: none;
+.logo h2 {
+    color: #333;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff8c42;
+}
+
+.sign a {
+    padding: 8px 15px;
+    border: 1px solid #ff8c42;
+    border-radius: 20px;
+    color: #ff8c42;
+}
+
+select {
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-toggle-checkbox,
+.menu-icon {
+    display: none;
 }
 
 .svg_2{
@@ -126,7 +126,9 @@ footer p{
 
 .social_icons{
 	display: flex;
-	justify-content: center;
+	justify-content: flex;
+	flex-wrap: wrap;
+	width:calc(10vw + 13rem);
 }
 .social_icons a{
 	margin: 10px;
@@ -139,17 +141,160 @@ footer p{
 	justify-self: center;
 }
 
+@media (max-width: 967px) {
+	.menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Hide the main nav element by default */
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        height: 100vh;
+        display: none;
+        padding-top: 80px;
+        box-shadow: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a,
+    nav ul li select {
+        color: white;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .sign a {
+        border-color: white;
+        color: white;
+    }
+
+
+    .menu-toggle-checkbox:checked~nav {
+        display: flex;
+    }
+
+}
+
 /* unique css */
 
 main h2{
     font-size: 65px;
+	margin-bottom: 100px;
+	text-align: center;
 }
 
-.Japan .cont{
+main section{
+	height: 1000px;
+}
+
+.japan .cont1, .greek .cont2, .morocco .cont3{
+	margin-top: 200px;
 	display: flex;
+	flex-wrap: wrap;
+	overflow-y: visible;
+	overflow-x: auto;
+	justify-content: center;
+	width: 690px;
+	height: 1200px;
+	gap: 2vw;
+	transform: rotate(-90deg) translateY(350px) translateX(400px);
 }
 
-main div{
-	height: 733px;
-	width: 400px;
+.image{	
+	transition: 1s;
+	height: 400px;
+	width: 650px;
+	gap: 2vw;
+	overflow: hidden;
+	flex-shrink: 0;
+	border-radius: 100px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.753);
+	transform-origin: top left;	
+	position: relative;
 }
+main img{
+	width: 200%;
+	border-radius: 100px;
+	transform: rotate(90deg) translateY(400px);
+}
+
+.image:hover{
+	z-index: 5;
+	transition: .85s;
+	transform: translateY(-500px);
+	transform-origin: center;
+	height: 1000px;
+	width: 670px;
+	margin-top: 500px;
+	margin-bottom: -500px; 
+}
+
+@media (max-width: 967px) {
+
+	.japan .cont1, .greek .cont2, .morocco .cont3{
+		margin-top: 200px;
+		display: flex;
+		flex-wrap: wrap;
+		overflow-y: visible;
+		overflow-x: auto;
+		justify-content: center;
+		width: 690px;
+		height: 1200px;
+		gap: 2vw;
+		transform: rotate(-90deg) translateY(260px) translateX(400px);
+	}
+
+.image{	
+	transition: 0s;
+	height: 300px;
+	width: 450px;
+	gap: 2vw;
+	overflow: hidden;
+	flex-shrink: 0;
+	border-radius: 100px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.753);
+	position: relative;
+}
+main img{
+	width: 240%;
+	border-radius: 100px;
+	transform: rotate(90deg) translateY(400px);
+}
+
+.image:hover{
+	z-index: 5;
+	transition: 0s;
+	transform: translateY(-500px);
+	transform-origin: center;
+	height: 300px;
+	width: 450px;
+	margin-top: 500px;
+	margin-bottom: -500px; 
+}
+
+}
+
+::-webkit-scrollbar {
+ display: none;
+}
+
