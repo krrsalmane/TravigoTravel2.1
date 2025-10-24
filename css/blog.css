@@ -29,58 +29,84 @@ body {
 }
 
 /* -------------------------Header------------------------- */
-#menu-icon{
-    font-size: 35px;
-        z-index: 10001;
-    cursor: pointer;
-    display: none;
-    display: none;
-}
 
-.navbar{
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-.navbar a{
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    padding: 0px 22px;
-}
-.navbar .sign_up{
-    padding: 8px;
-    padding-inline: 20px;
-    border: 1px solid rgb(0, 0, 0);
-    margin-right: 20px;
-    border-radius: 5px;
-}
-.logo{
-    color: black;
-    font-size: xx-large;
-    font-weight: 700;
-}
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background: transparent;
-    transition: ease .40s;
-    z-index: 100;
-    padding: 10px 10%;
-    background-color: #ffffff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.329);
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header select{
-    background: none;
-    border: none;
-    border-radius: 10px;
+.logo h2 {
+    color: #333;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 26px;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff8c42;
+}
+
+.sign a {
+    padding: 8px 15px;
+    border: 1px solid #ff8c42;
+    border-radius: 20px;
+    color: #ff8c42;
+}
+
+select {
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-toggle-checkbox,
+.menu-icon {
+    display: none;
+}
+
+
+.hero-title {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.hero-title .title-text {
+    font-size: 40px;
+    color: #333;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-title .title-text span {
+    color: #ff8c42;
+}
+
 
 /*---------------main-----------*/
 
@@ -351,30 +377,57 @@ footer p {
         margin-top: 10px !important;
     }
 
-    /* .menu-icon {
+     .menu-icon {
         display: block;
-        padding-left: 300px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001;
     }
 
-    nav div ul {
-        display: none;
-        flex-direction: column;
+    /* Hide the main nav element by default */
+    nav {
         position: absolute;
-        right: 2%;
-        background-color: var(--bg-color);
-        padding: 1rem;
-        width: 60%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        height: 100vh;
+        display: none;
+        padding-top: 80px;
+        box-shadow: none;
     }
 
-    .menu-toggle-checkbox:checked+.menu-icon+nav div ul {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a,
+    nav ul li select {
+        color: white;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .sign a {
+        border-color: white;
+        color: white;
+    }
+
+
+
+    .menu-toggle-checkbox:checked~nav {
         display: flex;
     }
-
-    nav div ul .sign {
-        width: 30%;
-    } */
 
     #Description--1 {
         order: 2;
